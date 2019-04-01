@@ -2,23 +2,22 @@
 <html>
   <head></head>
   <body>
-		 <table>
-				<tr>
-					
-					<% (size.to_i).times do |i| %>
+		<table>
+			<tr>	
+				<% (size.to_i).times do |i| %>
 					<th>
 						<%= (size.to_i - i - 1) %>
 					</th>
-					<% end %>
-					<th>AND</th>
-					<th>OR</th>
-          <th>NAND</th>
-					<th>NOR</th>
-					<th>XOR</th>
-					<th>SINGLE</th>
-				</tr>
+				<% end %>
+				<th>AND</th>
+				<th>OR</th>
+        <th>NAND</th>
+				<th>NOR</th>
+				<th>XOR</th>
+				<th>SINGLE</th>
+			</tr>
 				
-				<% table.each do |i| %>
+			<% table.each do |i| %>
 		    <tr>
 					<% i.each do |j| %>
 						<% if j %>
@@ -28,8 +27,9 @@
 						<% end %>
 					<% end %>
         </tr>
-				<% end %>
-		 </table><br>
+			<% end %>
+		</table><br>
+
 		<a href="/">Back to main page</a>
   </body>
 </html>
